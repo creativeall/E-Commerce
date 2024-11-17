@@ -1,0 +1,122 @@
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+ 
+.section {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(189, 189, 189, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+ 
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 35rem;
+    padding: 2rem 2rem;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    z-index: 2;
+}
+
+ 
+.content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: end;
+}
+
+ 
+.content h5 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+
+.content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.button {
+    padding: 10px 10px;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: all 0.1s ease;
+    z-index: 3;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.buttons{
+    display: flex;
+}
+
+.boxes{
+    display: flex;
+    justify-content: space-around;
+     
+}
+ .boxes .box{
+    height: 10px;
+    width: 10px;
+    padding: 15px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    color: black;
+    cursor: pointer;
+ }
+
+ .increament{
+    display: flex;
+    justify-content: end;
+ }
+
+ .incre{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border: 1px solid #6e6b6b;
+    margin-bottom: 20px;
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+ }
+
+ 

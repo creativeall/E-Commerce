@@ -1,0 +1,49 @@
+.parallaxone{
+    width: 100%;
+    height: 600px;
+    background-image: url(/src/images/cloth.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.parallaxone1{
+    width: 100%;
+    height: 600px;
+    background-image: url(/src/images/women\ f1.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.para {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.para img {
+    width: 90%; /* Adjust width for responsiveness */
+    height: auto; 
+    max-width: 600px; /* Maximum width for large screens */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .parallaxone img {
+        max-height: 150px; /* Reduce height on smaller screens */
+    }
+    
+    .para img {
+        width: 100%; /* Full width on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .parallaxone img {
+        max-height: 120px; /* Further reduce height on very small screens */
+    }
+    
+    .para {
+        padding: 10px; /* Less padding on smaller screens */
+    }
+}

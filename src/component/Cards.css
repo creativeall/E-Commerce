@@ -1,0 +1,61 @@
+/* Container to hold multiple cards in a flexbox layout */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Centers cards in the container */
+    padding: 20px;
+}
+
+/* Each Card */
+.card {
+    width: 18rem; /* Same width as inline style in React component */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Smooth scale on hover */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Card Image */
+.card img {
+    height: 300px; /* Fixed height for image */
+    object-fit: cover; /* Keeps the image proportionate */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* Card Body */
+.card-body {
+    padding: 15px;
+    text-align: center; /* Center aligns text and button */
+}
+
+/* Card Title */
+.card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333; /* Darker text color */
+}
+
+/* Card Text */
+.card-text {
+    font-size: 0.9em;
+    color: #666; /* Lighter text color for secondary content */
+    margin-bottom: 15px;
+}
+
+/* Button Styling */
+.card .btn-primary {
+    background-color: #007bff; /* Primary color for button */
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}

@@ -1,0 +1,147 @@
+ 
+footer {
+    width: 100%;
+    padding: 50px 100px;
+    background-color: #323643;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer .sec {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+footer .sec h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+footer .sec p {
+    color: #aaa;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+footer .social-icon {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    font-size: 24px;
+    color: #fff;
+}
+
+footer .social-icon svg {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+footer .social-icon svg:hover {
+    color: #ff6f61;
+}
+
+footer .sec ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .sec ul li {
+    margin: 10px 0;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+footer .sec ul li:hover {
+    color: #ff6f61;
+}
+
+footer .sec.contact .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+    color: #aaa;
+}
+
+footer .sec.contact .info svg {
+    margin-right: 8px;
+    vertical-align: middle;
+    color: #fff;
+}
+
+footer .sec.contact .info {
+    color: #aaa;
+}
+
+.copyrightText {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #111;
+    font-size: 14px;
+    color: #aaa;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 30px 20px;
+    }
+
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .sec {
+        min-width: auto;
+        margin-bottom: 15px;
+    }
+
+    footer .sec h2 {
+        font-size: 16px;
+    }
+
+    footer .sec p, footer .sec ul li {
+        font-size: 13px;
+    }
+
+    footer .social-icon {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 20px 10px;
+    }
+
+    footer .sec h2 {
+        font-size: 14px;
+    }
+
+    footer .sec p, footer .sec ul li {
+        font-size: 12px;
+    }
+
+    footer .social-icon {
+        font-size: 20px;
+    }
+
+    .copyrightText {
+        padding: 15px 0;
+        font-size: 12px;
+    }
+}
+ 
